@@ -1,0 +1,4 @@
+login anonymous
+force_install_dir /server
+app_update 108600 validate
+quit
