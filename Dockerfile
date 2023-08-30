@@ -1,5 +1,5 @@
 FROM steamcmd/steamcmd:latest
 
-ADD steamcmds.txt /
+RUN steamcmd @NoPromptForPassword 1 +force_install_dir /server +login anonymous +app_update 380870 +quit
 
-RUN steamcmd +runscript /steamcmds.txt
+ENTRYPOINT "bash"
